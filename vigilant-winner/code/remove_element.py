@@ -1,7 +1,7 @@
+from typing import List
 
 
-
-def remove_element(arr, val):
+def remove_element(arr: List[int], val) -> int:
     """
     Remove all element from arr for arr[i] == val.
     below algorithm runs in O(n) runtime complexity and constant space.
