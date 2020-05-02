@@ -27,8 +27,8 @@ def is_binary_search_tree(root):
     if root is None:
         return True
 
-    # queue is used to traverse the tree
-    # initialize with root
+    # stack, DFS, is used to traverse the tree.
+    # initialize with root. +infinity as upper_bound and -infinity as lower.
     stack = [(root, float('inf'), float('-inf'))]
 
     # traverse until stack is not empty
