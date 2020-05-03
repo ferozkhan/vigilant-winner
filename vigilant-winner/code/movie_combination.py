@@ -2,6 +2,11 @@ import unittest
 from typing import List
 
 
+"""
+Complexity: 
+    runtime:    O(n)
+    space:      O(n)
+"""
 def can_two_movies_fill_flight(movies_length: List[int], flight_length: int) -> bool:
     # to store movie length seen so far
     movie_length_seen = set()
