@@ -34,8 +34,8 @@ if __name__ == "__main__":
         print("-> word_count.py <filename> <top-N-word>")
         sys.exit()
     top_n_words = int(sys.argv[2]) if len(sys.argv) > 2 else None
-    word_count = list(sorted(get_words_count(sys.argv[1]).items(),
-                        key=operator.itemgetter(1), reverse=True))
+    word_count = sorted(get_words_count(sys.argv[1]).items(),
+                        key=operator.itemgetter(1), reverse=True)
     if top_n_words:
         print(word_count[:top_n_words], end='\n')
     else:
