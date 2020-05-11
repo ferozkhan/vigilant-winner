@@ -28,7 +28,7 @@ def solution(N):
     return max_gap
 
 
-print(solution(32))
-print(solution(592))
-print(solution(51712))
+assert solution(32) == 0
+assert solution(592) == 2
+assert solution(51712) == 2
 
